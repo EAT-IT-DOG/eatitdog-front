@@ -10,6 +10,7 @@ export const DarkmodeButtonContainer = styled.button`
   justify-content: center;
   border: 0px;
   background-color: ${palette.pinkMain};
+  cursor: pointer;
 `;
 
 export const DarkmodeButtonIcon = styled.div`

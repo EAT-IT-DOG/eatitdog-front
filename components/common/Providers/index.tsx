@@ -1,5 +1,9 @@
 import { ProvidersProps } from "./types";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import {
+  Hydrate,
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query";
 import React from "react";
 import { RecoilRoot } from "recoil";
 import ThemeProviderContainer from "../ThemeProviderContainer";
@@ -15,12 +19,14 @@ const queryClient = new QueryClient({
   },
 });
 
-const Providers = ({ children }: ProvidersProps) => {
+const Providers = ({ children, pageProps }: ProvidersProps) => {
   return (
     <QueryClientProvider client={queryClient}>
-      <RecoilRoot>
-        <ThemeProviderContainer>{children}</ThemeProviderContainer>
-      </RecoilRoot>
+      <Hydrate state={pageProps.dehydratedState}>
+        <RecoilRoot>
+          <ThemeProviderContainer>{children}</ThemeProviderContainer>
+        </RecoilRoot>
+      </Hydrate>
     </QueryClientProvider>
   );
 };
