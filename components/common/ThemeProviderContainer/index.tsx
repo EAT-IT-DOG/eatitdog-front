@@ -1,7 +1,6 @@
 import { ReactNode } from "react";
 import { ThemeProvider } from "styled-components";
 import useTheme from "../../../hooks/theme/useTheme";
-import { darkTheme, lightTheme } from "../../../styles/theme";
 
 import React from "react";
 
@@ -10,9 +9,7 @@ interface Props {
 }
 
 const ThemeProviderContainer = ({ children }: Props) => {
-  const { themeColor, currentTheme } = useTheme();
-
-  console.log(currentTheme);
+  const { themeColor } = useTheme();
 
   return <ThemeProvider theme={themeColor}>{children}</ThemeProvider>;
 };

@@ -19,7 +19,5 @@ export const getTheme = (): ThemeType => {
     return "LIGHT";
   }
 
-  console.log(themeMode);
-
   return themeMode as ThemeType;
 };

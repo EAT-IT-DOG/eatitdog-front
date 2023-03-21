@@ -1,5 +1,11 @@
 import { FoodSafeness, FoodType } from "../../types/food/food.type";
 
+export const FoodSafenessColor: Record<FoodSafeness, string> = {
+  SAFE: "#435c53",
+  NORMAL: "#eccd8c",
+  DANGEROUS: "#edbacc",
+} as const;
+
 export const SEARCH_FOOD_TYPES_ITEM: {
   title: string;
   type: FoodType;
