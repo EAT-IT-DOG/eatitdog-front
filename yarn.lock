@@ -229,6 +229,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-icons/all-files@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@react-icons/all-files@npm:4.1.0"
+  peerDependencies:
+    react: "*"
+  checksum: c34c644650a144e4f2157c20b3106200ac1f76b3132dcda1a40f061e000a34c78df188266395afae571d5c85bf48365824db7b1bf8b7ae6229fdc148c941ab85
+  languageName: node
+  linkType: hard
+
 "@rushstack/eslint-patch@npm:^1.1.3":
   version: 1.2.0
   resolution: "@rushstack/eslint-patch@npm:1.2.0"
@@ -730,6 +739,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eatitdogv2@workspace:."
   dependencies:
+    "@react-icons/all-files": ^4.1.0
     "@types/node": 18.15.5
     "@types/react": 18.0.28
     "@types/react-dom": 18.0.11
