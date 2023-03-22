@@ -9,7 +9,7 @@ const HomeFoodRankingList = () => {
   return (
     <>
       {serverFoodNamesData?.map(({ name }, idx) => (
-        <HomeFoodRankItem rank={idx + 1} name={name} />
+        <HomeFoodRankItem rank={idx + 1} name={name} key={idx} />
       ))}
     </>
   );
