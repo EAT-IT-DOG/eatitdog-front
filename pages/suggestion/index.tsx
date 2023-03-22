@@ -1,7 +1,8 @@
 import { NextPage } from "next";
+import FixPage from "../FixPage";
 
 const SuggestionPage: NextPage = () => {
-  return <div></div>;
+  return <FixPage />;
 };
 
 export default SuggestionPage;

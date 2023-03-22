@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
-import { palette } from "../../../style/palette";
 import { ButtonType } from "./button.type";
+import { palette } from "../../../styles/palette";
 
 export const Container = styled.button<{ buttonType: ButtonType }>`
   width: 80px;
@@ -8,6 +8,7 @@ export const Container = styled.button<{ buttonType: ButtonType }>`
   font-size: 14px;
   border-radius: 80px;
   background: none;
+  cursor: pointer;
 
   ${({ buttonType }) =>
     buttonType === "Submit"
