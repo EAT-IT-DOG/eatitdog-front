@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { palette } from "../../../styles/palette";
 
-export const HomeFoodCarouselContainer = styled.div`
+export const HomeFoodCarouselContainer = styled.section`
   margin-top: 50px;
   height: 144px;
   z-index: 1;

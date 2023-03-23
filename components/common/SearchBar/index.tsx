@@ -17,7 +17,7 @@ const SearchBar = () => {
         value={keyword}
         onChange={onChangeKeyword}
       />
-      <SearchBarSubmitButton type="submit">
+      <SearchBarSubmitButton type="submit" aria-label="search">
         <SearchBarSubmitButtonIcon>
           <BiSearch />
         </SearchBarSubmitButtonIcon>

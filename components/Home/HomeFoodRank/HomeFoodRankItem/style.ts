@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { widthOverflowEllipsisLine } from "../../../../styles/libStyle";
 
-export const HomeFoodRankItemContainer = styled.div`
+export const HomeFoodRankItemContainer = styled.li`
   width: 140px;
   min-height: 20px;
   max-height: 20px;
@@ -10,7 +10,7 @@ export const HomeFoodRankItemContainer = styled.div`
   column-gap: 20px;
 `;
 
-export const HomeFoodRankItemRank = styled.h1`
+export const HomeFoodRankItemRank = styled.mark`
   min-width: 16px;
   font-size: 16px;
   font-weight: bold;

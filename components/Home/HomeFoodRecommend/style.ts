@@ -1,6 +1,7 @@
+import Image from "next/image";
 import styled from "styled-components";
 
-export const HomeFoodRecommendContainer = styled.div`
+export const HomeFoodRecommendContainer = styled.section`
   width: 282px;
   height: 358px;
   border-radius: 15px;
@@ -10,14 +11,14 @@ export const HomeFoodRecommendContainer = styled.div`
   background-color: ${({ theme }) => theme.subBackgroundColor};
 `;
 
-export const HomeFoodRecommendTitle = styled.h1`
+export const HomeFoodRecommendTitle = styled.h3`
   font-size: 18px;
   color: ${({ theme }) => theme.contrast};
   font-weight: bold;
   text-align: start;
 `;
 
-export const HomeFoodRecommendFoodIcon = styled.img`
+export const HomeFoodRecommendFoodIcon = styled(Image)`
   width: 90px;
   height: 90px;
   object-fit: scale-down;
@@ -25,7 +26,7 @@ export const HomeFoodRecommendFoodIcon = styled.img`
   margin-top: 36px;
 `;
 
-export const HomeFoodRecommendFoodName = styled.h1`
+export const HomeFoodRecommendFoodName = styled.mark`
   font-size: 18px;
   color: ${({ theme }) => theme.contrast};
   line-height: 26px;
@@ -34,7 +35,7 @@ export const HomeFoodRecommendFoodName = styled.h1`
   margin-top: 10px;
 `;
 
-export const HomeFoodRecommendFoodDescription = styled.p`
+export const HomeFoodRecommendFoodDescription = styled.summary`
   width: 150px;
   text-align: center;
   color: ${({ theme }) => theme.contrast};
