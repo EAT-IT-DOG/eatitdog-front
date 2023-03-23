@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { palette } from "../../../styles/palette";
+import Image from "next/image";
 
-export const HomePanelContainer = styled.div`
+export const HomePanelContainer = styled.article`
   width: 100%;
   height: 200px;
   padding: 0px 160px;
@@ -17,21 +18,22 @@ export const HomePanelTextWrap = styled.div`
   flex-direction: column;
 `;
 
-export const HomePanelTitle = styled.h1`
+export const HomePanelTitle = styled.h2`
   font-size: 30px;
   color: white;
   text-align: start;
   line-height: 43px;
 `;
 
-export const HomePanelSubTitle = styled.p`
+export const HomePanelSubTitle = styled.h3`
   font-size: 20px;
   color: white;
   text-align: start;
   line-height: 29px;
 `;
 
-export const HomePanelImage = styled.img`
+export const HomePanelImage = styled(Image)`
   width: 141px;
+  height: 161px;
   object-fit: scale-down;
 `;

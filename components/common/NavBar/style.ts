@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { palette } from "../../../styles/palette";
 
-export const NavBarContainer = styled.div`
+export const NavBarContainer = styled.header`
   min-width: 210px;
   max-width: 210px;
   height: 100vh;
@@ -20,7 +20,7 @@ export const NavBarTitle = styled.h1`
   cursor: pointer;
 `;
 
-export const NavBarSectionWrap = styled.div`
+export const NavBarSectionWrap = styled.nav`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@ export const NavBarSectionItemWrap = styled.div<{ selected: boolean }>`
         `}
 `;
 
-export const NavBarSectionItem = styled.div<{ selected: boolean }>`
+export const NavBarSectionItem = styled.li<{ selected: boolean }>`
   width: 120px;
   height: 40px;
   position: absolute;

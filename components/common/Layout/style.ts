@@ -7,13 +7,13 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.backgroundColor};
 `;
 
-export const HeaderWrap = styled.div`
+export const HeaderWrap = styled.section`
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
 `;
 
-export const ConentWrap = styled.div`
+export const ConentWrap = styled.main`
   width: 100%;
   height: 100vh;
   display: flex;

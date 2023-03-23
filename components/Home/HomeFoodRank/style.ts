@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HomeFoodRankContainer = styled.div`
+export const HomeFoodRankContainer = styled.section`
   width: 580px;
   height: 358px;
   padding: 40px;
@@ -10,14 +10,14 @@ export const HomeFoodRankContainer = styled.div`
   flex-direction: column;
 `;
 
-export const HomeFoodRankTitle = styled.h1`
+export const HomeFoodRankTitle = styled.h3`
   font-size: 18px;
   line-height: 26px;
   color: ${({ theme }) => theme.contrast};
   margin-bottom: 40px;
 `;
 
-export const HomeFoodRankItemWrap = styled.div`
+export const HomeFoodRankItemWrap = styled.ul`
   width: 100%;
   max-height: 210px;
   display: flex;

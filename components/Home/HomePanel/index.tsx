@@ -16,7 +16,12 @@ const HomePanel = () => {
           세상의 모든 좋은 음식이 반려견에게 닿을 때까지
         </HomePanelSubTitle>
       </HomePanelTextWrap>
-      <HomePanelImage src={HomePanelDogImage.src} />
+      <HomePanelImage
+        width={141}
+        height={161}
+        src={HomePanelDogImage.src}
+        alt={"panel dog"}
+      />
     </HomePanelContainer>
   );
 };
