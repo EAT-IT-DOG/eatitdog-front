@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FoodSafenessColor } from "../../../constants/search/search.constant";
 import { FoodSafeness } from "../../../types/food/food.type";
 
-export const Container = styled.div`
+export const Container = styled.section`
   width: 100%;
   height: 34px;
   display: flex;
@@ -10,7 +10,7 @@ export const Container = styled.div`
   column-gap: 18px;
 `;
 
-export const FoodTypeItem = styled.div<{
+export const FoodTypeItem = styled.li<{
   safenessType: FoodSafeness;
 }>`
   width: 90px;

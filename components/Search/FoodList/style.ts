@@ -3,7 +3,7 @@ import { FoodSafenessColor } from "../../../constants/search/search.constant";
 import { FoodSafeness } from "../../../types/food/food.type";
 import { palette } from "../../../styles/palette";
 
-export const Container = styled.div`
+export const Container = styled.section`
   width: 100%;
   height: 728px;
   border-radius: 15px;
@@ -19,15 +19,6 @@ export const SafenessWrap = styled.div`
   align-items: center;
   justify-content: end;
   column-gap: 14px;
-`;
-
-export const SafenssLabel = styled.div<{
-  safenessType: FoodSafeness;
-}>`
-  width: 18px;
-  height: 18px;
-  border-radius: 100%;
-  background-color: ${({ safenessType }) => FoodSafenessColor[safenessType]};
 `;
 
 export const SafenssLabelName = styled.span`
@@ -82,7 +73,7 @@ export const FoodItem = styled.div<{
   }
 `;
 
-export const FoodItemTitle = styled.span`
+export const FoodItemTitle = styled.mark`
   font-size: 16px;
   line-height: 23px;
   color: ${({ theme }) => theme.contrast};

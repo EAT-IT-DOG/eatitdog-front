@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FoodSafeness } from "../../../types/food/food.type";
 import { FoodSafenessColor } from "../../../constants/search/search.constant";
 
-export const Container = styled.div<{ safenessType: FoodSafeness }>`
+export const Container = styled.article<{ safenessType: FoodSafeness }>`
   width: 100%;
   height: 728px;
   border-radius: 15px;

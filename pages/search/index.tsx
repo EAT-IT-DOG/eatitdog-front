@@ -4,9 +4,20 @@ import Search from "../../components/Search";
 import { QueryClient, dehydrate } from "@tanstack/react-query";
 import { QUERY_KEY } from "../../queries/queryKey";
 import FoodRepositoryImpl from "../../repositories/food/FoodRepositoryImpl";
+import { useRouter } from "next/router";
+import Head from "next/head";
 
 const SearchPage: NextPage = () => {
-  return <Search />;
+  const router = useRouter();
+
+  return (
+    <>
+      <Head>
+        <title>{`${router.query.type} | 먹어보시개`}</title>
+      </Head>
+      <Search />
+    </>
+  );
 };
 
 export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
