@@ -6,6 +6,7 @@ import { QUERY_KEY } from "../queryKey";
 import {
   getFoodByNameParam,
   getFoodNamesByTypeParam,
+  getFoodsByKeywordParam,
 } from "../../repositories/food/FoodRepository";
 
 export const useGetFoodNamesByType = (
@@ -65,6 +66,21 @@ export const useGetRandomFood = (
     {
       cacheTime: 1000 * 60 * 2,
       staleTime: 1000 * 60,
+      ...options,
+    }
+  );
+
+export const useGetFoodsByKeyword = (
+  { keyword }: getFoodsByKeywordParam,
+  options?: UseQueryOptions<Food[], AxiosError, Food[], [string, string]>
+) =>
+  useQuery(
+    QUERY_KEY.food.getFoodsByKeyword(keyword),
+    () => FoodRepositoryImpl.getFoodsByKeyword({ keyword }),
+    {
+      cacheTime: 1000 * 60 * 5,
+      staleTime: 1000 * 60,
+      enabled: !!keyword,
       ...options,
     }
   );

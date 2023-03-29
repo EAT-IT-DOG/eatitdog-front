@@ -8,6 +8,8 @@ export interface FoodRepository {
   getFoodNamesBySearchCount(): Promise<FoodName[]>;
 
   getRandomFood(): Promise<Food>;
+
+  getFoodsByKeyword({ keyword }: getFoodsByKeywordParam): Promise<Food[]>;
 }
 
 export interface getFoodNamesByTypeParam {
@@ -16,4 +18,8 @@ export interface getFoodNamesByTypeParam {
 
 export interface getFoodByNameParam {
   name: string;
+}
+
+export interface getFoodsByKeywordParam {
+  keyword: string;
 }

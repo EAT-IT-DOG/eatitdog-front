@@ -10,6 +10,10 @@ export const QUERY_KEY = {
       "food/getFoodByName",
       name,
     ],
+    getFoodsByKeyword: (keyword: string): [string, string] => [
+      "food/getFoodsByKeyword",
+      keyword,
+    ],
     getFoodNamesBySearchCount: "food/getFoodNamesBySearchCount",
     getRandomFood: "food/getRandomFood",
   },

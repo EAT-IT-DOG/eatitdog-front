@@ -3,6 +3,7 @@ import "../styles/reset.css";
 import "../styles/globalStyle.css";
 import Providers from "../components/common/Providers";
 import Layout from "../components/common/Layout";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {

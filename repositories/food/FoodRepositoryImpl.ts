@@ -4,6 +4,7 @@ import {
   FoodRepository,
   getFoodNamesByTypeParam,
   getFoodByNameParam,
+  getFoodsByKeywordParam,
 } from "./FoodRepository";
 
 class FoodRepositoryImpl implements FoodRepository {
@@ -26,6 +27,18 @@ class FoodRepositoryImpl implements FoodRepository {
 
   public async getRandomFood(): Promise<Food> {
     const { data } = await customAxios.get("/food/random");
+    return data;
+  }
+
+  public async getFoodsByKeyword({
+    keyword,
+  }: getFoodsByKeywordParam): Promise<Food[]> {
+    const { data } = await customAxios.get(
+      `/food/search?keyword=${keyword}&page=${0}&size=${40}`
+    );
+
+    console.log(data);
+
     return data;
   }
 }
