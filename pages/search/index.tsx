@@ -35,6 +35,18 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
     ]);
   }
 
+  if (ctx.query.keyword) {
+    await Promise.all([
+      queryClient.prefetchQuery(
+        QUERY_KEY.food.getFoodsByKeyword(ctx.query.keyword as string),
+        () =>
+          FoodRepositoryImpl.getFoodsByKeyword({
+            keyword: ctx.query.keyword as string,
+          })
+      ),
+    ]);
+  }
+
   return {
     props: {
       dehydratedState: dehydrate(queryClient),

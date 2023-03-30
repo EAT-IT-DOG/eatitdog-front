@@ -7,6 +7,7 @@ import {
 import React from "react";
 import { RecoilRoot } from "recoil";
 import ThemeProviderContainer from "../ThemeProviderContainer";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -15,6 +16,7 @@ const queryClient = new QueryClient({
       retryOnMount: false,
       refetchOnWindowFocus: false,
       refetchOnReconnect: false,
+      staleTime: 1000,
     },
   },
 });
@@ -27,6 +29,7 @@ const Providers = ({ children, pageProps }: ProvidersProps) => {
           <ThemeProviderContainer>{children}</ThemeProviderContainer>
         </RecoilRoot>
       </Hydrate>
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
 };

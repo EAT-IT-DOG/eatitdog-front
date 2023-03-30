@@ -16,7 +16,7 @@ const useSearchFood = () => {
 
     e.preventDefault();
 
-    router.push(`/search/${keyword}`);
+    router.push(`/search?keyword=${keyword}`);
 
     setKeyword("");
   };
