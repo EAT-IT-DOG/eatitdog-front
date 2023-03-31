@@ -1,19 +1,21 @@
-import { GetServerSidePropsContext, NextPage } from "next";
-import React from "react";
-import Search from "../../components/Search";
 import { QueryClient, dehydrate } from "@tanstack/react-query";
-import { QUERY_KEY } from "../../queries/queryKey";
-import FoodRepositoryImpl from "../../repositories/food/FoodRepositoryImpl";
+import { GetServerSidePropsContext, NextPage } from "next";
+import { QUERY_KEY } from "../../../queries/queryKey";
+import FoodRepositoryImpl from "../../../repositories/food/FoodRepositoryImpl";
+import Search from "../../../components/Search";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import { FoodTypeKorean } from "../../../types/food/food.type";
 
-const SearchPage: NextPage = () => {
+const SearchFoodTypePage: NextPage = () => {
   const router = useRouter();
 
   return (
     <>
       <Head>
-        <title>{`${router.query.type} | 먹어보시개`}</title>
+        <title>{`${
+          FoodTypeKorean[router.query.type as string]
+        } | 먹어보시개`}</title>
       </Head>
       <Search />
     </>
@@ -35,18 +37,6 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
     ]);
   }
 
-  if (ctx.query.keyword) {
-    await Promise.all([
-      queryClient.prefetchQuery(
-        QUERY_KEY.food.getFoodsByKeyword(ctx.query.keyword as string),
-        () =>
-          FoodRepositoryImpl.getFoodsByKeyword({
-            keyword: ctx.query.keyword as string,
-          })
-      ),
-    ]);
-  }
-
   return {
     props: {
       dehydratedState: dehydrate(queryClient),
@@ -54,4 +44,4 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
   };
 };
 
-export default SearchPage;
+export default SearchFoodTypePage;
