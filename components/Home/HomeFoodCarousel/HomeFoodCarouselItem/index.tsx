@@ -27,7 +27,7 @@ const HomeFoodCarouselItem = ({
   return (
     <HomeFoodCarouselItemContainer
       backgroundColor={backgroundColor}
-      onClick={() => router.push(`/search?type=${type}`)}
+      onClick={() => router.push(`/search/type/${type}`)}
     >
       <HomeFoodCarouselItemIconWrap backgroundColor={backgroundColor}>
         <HomeFoodCarouselItemIcon

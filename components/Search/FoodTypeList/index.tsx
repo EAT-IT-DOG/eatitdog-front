@@ -9,7 +9,7 @@ const FoodTypeList = () => {
     <S.Container>
       {SEARCH_FOOD_TYPES_ITEM.map((type) => (
         <S.FoodTypeItem
-          onClick={() => router.push(`/search?type=${type.type}`)}
+          onClick={() => router.replace(`/search/type/${type.type}`)}
           safenessType={type.safeness}
           key={type.title}
         >

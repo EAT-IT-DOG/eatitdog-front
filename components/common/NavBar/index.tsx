@@ -22,24 +22,22 @@ const NavBar = () => {
       <NavBarTitle onClick={() => router.push("/")}>먹어보시개</NavBarTitle>
       <NavBarSectionWrap>
         {NAVBAR_SECTION_ITEMS.map((sectionItem) => (
-          <NavBarSectionItemWrap
-            selected={sectionItem.selector === router.pathname}
-            key={sectionItem.sectionName}
-          >
-            <NavBarSectionItem
+          <Link href={sectionItem.link} key={sectionItem.sectionName}>
+            <NavBarSectionItemWrap
               selected={sectionItem.selector === router.pathname}
-              onClick={() => {
-                router.push(sectionItem.link);
-              }}
             >
-              <NavBarSectionItemIcon
+              <NavBarSectionItem
                 selected={sectionItem.selector === router.pathname}
               >
-                <sectionItem.icon />
-              </NavBarSectionItemIcon>
-              {sectionItem.sectionName}
-            </NavBarSectionItem>
-          </NavBarSectionItemWrap>
+                <NavBarSectionItemIcon
+                  selected={sectionItem.selector === router.pathname}
+                >
+                  <sectionItem.icon />
+                </NavBarSectionItemIcon>
+                {sectionItem.sectionName}
+              </NavBarSectionItem>
+            </NavBarSectionItemWrap>
+          </Link>
         ))}
       </NavBarSectionWrap>
       {/* <NavBarLogOutBtn>

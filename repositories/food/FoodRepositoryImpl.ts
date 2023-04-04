@@ -37,8 +37,6 @@ class FoodRepositoryImpl implements FoodRepository {
       `/food/search?keyword=${keyword}&page=${0}&size=${40}`
     );
 
-    console.log(data);
-
     return data;
   }
 }

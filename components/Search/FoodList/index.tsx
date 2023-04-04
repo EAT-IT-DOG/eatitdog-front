@@ -9,9 +9,10 @@ import { useRouter } from "next/router";
 import SafenessLabel from "../../common/SafenessLabel";
 import { Suspense } from "react";
 import SearchFoodListFallbackLoader from "../../common/FallbackLoader/SearchFoodList";
+import Link from "next/link";
 
 const FoodList = () => {
-  const router = useRouter();
+  const { query } = useRouter();
 
   return (
     <S.Container>
@@ -21,10 +22,8 @@ const FoodList = () => {
         <SafenessLabel safenessType="DANGEROUS" />
       </S.SafenessWrap>
       <Suspense fallback={<SearchFoodListFallbackLoader />}>
-        {router.query.type && <FoodListByType />}
-      </Suspense>
-      <Suspense fallback={<SearchFoodListFallbackLoader />}>
-        {router.query.keyword && <FoodListByKeyword />}
+        {query.type && <FoodListByType />}
+        {query.keyword && <FoodListByKeyword />}
       </Suspense>
     </S.Container>
   );
@@ -49,16 +48,14 @@ const FoodListByType = () => {
       ) : (
         <S.ItemWrap>
           {serverFoodNamesData?.map((foodName) => (
-            <S.FoodItem
-              safenessType={foodName.safeness}
-              onClick={() => router.push(`/search/${foodName.name}`)}
-              key={foodName.name}
-            >
-              <S.FoodItemTitle>{foodName.name}</S.FoodItemTitle>
-              <S.FoodItemType>
-                #{FoodTypeKorean[router.query.type as string]}
-              </S.FoodItemType>
-            </S.FoodItem>
+            <Link href={`/search/${foodName.name}`} key={foodName.name}>
+              <S.FoodItem safenessType={foodName.safeness}>
+                <S.FoodItemTitle>{foodName.name}</S.FoodItemTitle>
+                <S.FoodItemType>
+                  #{FoodTypeKorean[router.query.type as string]}
+                </S.FoodItemType>
+              </S.FoodItem>
+            </Link>
           ))}
         </S.ItemWrap>
       )}
@@ -71,7 +68,7 @@ const FoodListByKeyword = () => {
 
   const { data: serverFoodsData } = useGetFoodsByKeyword(
     { keyword: router.query.keyword as string },
-    { enabled: !!router.query.keyword, suspense: true }
+    { suspense: true }
   );
 
   return (
@@ -81,14 +78,12 @@ const FoodListByKeyword = () => {
       ) : (
         <S.ItemWrap>
           {serverFoodsData?.map((food) => (
-            <S.FoodItem
-              safenessType={food.safeness}
-              onClick={() => router.push(`/search/${food.name}`)}
-              key={food.name}
-            >
-              <S.FoodItemTitle>{food.name}</S.FoodItemTitle>
-              <S.FoodItemType>#{FoodTypeKorean[food.type]}</S.FoodItemType>
-            </S.FoodItem>
+            <Link href={`/search/${food.name}`} key={food.name}>
+              <S.FoodItem safenessType={food.safeness}>
+                <S.FoodItemTitle>{food.name}</S.FoodItemTitle>
+                <S.FoodItemType>#{FoodTypeKorean[food.type]}</S.FoodItemType>
+              </S.FoodItem>
+            </Link>
           ))}
         </S.ItemWrap>
       )}

@@ -45,6 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["js-cookie", "npm:3.0.1"],\
             ["next", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:13.2.4"],\
             ["react", "npm:18.2.0"],\
+            ["react-device-detect", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:2.2.3"],\
             ["react-dom", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:18.2.0"],\
             ["react-error-boundary", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:3.1.4"],\
             ["react-is", "npm:18.2.0"],\
@@ -3823,6 +3824,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["js-cookie", "npm:3.0.1"],\
             ["next", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:13.2.4"],\
             ["react", "npm:18.2.0"],\
+            ["react-device-detect", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:2.2.3"],\
             ["react-dom", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:18.2.0"],\
             ["react-error-boundary", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:3.1.4"],\
             ["react-is", "npm:18.2.0"],\
@@ -5829,6 +5831,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-device-detect", [\
+        ["npm:2.2.3", {\
+          "packageLocation": "./.yarn/cache/react-device-detect-npm-2.2.3-307eab666a-42d9b3182b.zip/node_modules/react-device-detect/",\
+          "packageDependencies": [\
+            ["react-device-detect", "npm:2.2.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:2.2.3", {\
+          "packageLocation": "./.yarn/__virtual__/react-device-detect-virtual-a81ca6d738/0/cache/react-device-detect-npm-2.2.3-307eab666a-42d9b3182b.zip/node_modules/react-device-detect/",\
+          "packageDependencies": [\
+            ["react-device-detect", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:2.2.3"],\
+            ["@types/react", "npm:18.0.30"],\
+            ["@types/react-dom", "npm:18.0.11"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:18.2.0"],\
+            ["ua-parser-js", "npm:1.0.34"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-dom", [\
         ["npm:18.2.0", {\
           "packageLocation": "./.yarn/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/",\
@@ -6566,6 +6595,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/typescript-patch-772e75d75e-b63cb742fb.zip/node_modules/typescript/",\
           "packageDependencies": [\
             ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["ua-parser-js", [\
+        ["npm:1.0.34", {\
+          "packageLocation": "./.yarn/cache/ua-parser-js-npm-1.0.34-df5c5013a5-7892454887.zip/node_modules/ua-parser-js/",\
+          "packageDependencies": [\
+            ["ua-parser-js", "npm:1.0.34"]\
           ],\
           "linkType": "HARD"\
         }]\

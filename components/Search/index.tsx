@@ -1,15 +1,11 @@
 import { Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
-
 import FoodDetail from "./FoodDetail";
-const FoodList = dynamic(() => import("./FoodList"), { ssr: false });
-
 import FoodNotFound from "./FoodNotFound";
 import FoodTypeList from "./FoodTypeList";
-import SearchFoodListFallbackLoader from "../common/FallbackLoader/SearchFoodList";
 import SearchFoodDetailFallbackLoader from "../common/FallbackLoader/SearchFoodDetailFallbackLoader";
 import { useRouter } from "next/router";
-import dynamic from "next/dynamic";
+import FoodList from "./FoodList";
 
 const Search = () => {
   const { query } = useRouter();
@@ -18,14 +14,7 @@ const Search = () => {
     <>
       <FoodTypeList />
       <>
-        {(query.type || query.keyword) && (
-          <ErrorBoundary
-            key={query.type as string}
-            FallbackComponent={FoodNotFound}
-          >
-            <FoodList />
-          </ErrorBoundary>
-        )}
+        {(query.type || query.keyword) && <FoodList />}
         {query.name && (
           <ErrorBoundary
             key={query.name as string}

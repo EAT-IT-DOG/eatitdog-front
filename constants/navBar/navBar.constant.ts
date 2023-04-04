@@ -21,7 +21,7 @@ export const NAVBAR_SECTION_ITEMS = [
   {
     sectionName: "검색",
     selector: "/search",
-    link: `/search?type=${SEARCH_FOOD_TYPES_ITEM[0].type}`,
+    link: `/search/type/${SEARCH_FOOD_TYPES_ITEM[0].type}`,
     icon: BiSearch,
   },
 ] as const;
