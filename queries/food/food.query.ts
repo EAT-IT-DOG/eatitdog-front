@@ -23,7 +23,7 @@ export const useGetFoodNamesByType = (
     () => FoodRepositoryImpl.getFoodNamesByType({ type }),
     {
       cacheTime: 1000 * 60 * 2,
-      staleTime: 1000 * 60,
+      staleTime: 0,
       enabled: !!type,
       ...options,
     }
@@ -38,7 +38,7 @@ export const useGetFoodByName = (
     () => FoodRepositoryImpl.getFoodByName({ name }),
     {
       cacheTime: 1000 * 60 * 2,
-      staleTime: 1000 * 60,
+      staleTime: 0,
       enabled: !!name,
       ...options,
     }
@@ -52,7 +52,7 @@ export const useGetFoodNamesBySearch = (
     () => FoodRepositoryImpl.getFoodNamesBySearchCount(),
     {
       cacheTime: 1000 * 60 * 2,
-      staleTime: 1000 * 60,
+      staleTime: 0,
       ...options,
     }
   );
@@ -79,7 +79,7 @@ export const useGetFoodsByKeyword = (
     () => FoodRepositoryImpl.getFoodsByKeyword({ keyword }),
     {
       cacheTime: 1000 * 60 * 5,
-      staleTime: 1000 * 60,
+      staleTime: 0,
       enabled: !!keyword,
       ...options,
     }

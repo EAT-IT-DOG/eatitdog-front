@@ -2458,6 +2458,7 @@ __metadata:
     js-cookie: ^3.0.1
     next: latest
     react: 18.2.0
+    react-device-detect: ^2.2.3
     react-dom: 18.2.0
     react-error-boundary: ^3.1.4
     react-is: ^18.2.0
@@ -4143,6 +4144,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-device-detect@npm:^2.2.3":
+  version: 2.2.3
+  resolution: "react-device-detect@npm:2.2.3"
+  dependencies:
+    ua-parser-js: ^1.0.33
+  peerDependencies:
+    react: ">= 0.14.0"
+    react-dom: ">= 0.14.0"
+  checksum: 42d9b3182b9d2495bf0d7914c9f370da51d8bdb853a3eba2acaf433894ae760386a075ba103185be825b33d42f50d85ef462087f261656d433f4c74dab23861f
+  languageName: node
+  linkType: hard
+
 "react-dom@npm:18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
@@ -4775,6 +4788,13 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: b63cb742fbb9aeb3085e002ad8f10d5fd963606aa4d6b3b65b4e76c396ff09739f03b5dbae08e1698c3bce9d5619d3f67aeb7ee470ed4016bd345b3cfe37b54a
+  languageName: node
+  linkType: hard
+
+"ua-parser-js@npm:^1.0.33":
+  version: 1.0.34
+  resolution: "ua-parser-js@npm:1.0.34"
+  checksum: 78924548870c67b93b4bc6bd3d9736badfca8cc02ea01510fb0ed38e296a8c0713a6bec6226ed2383d5d521bab651a6fcaa75d421f04cafebca0f93250480fb3
   languageName: node
   linkType: hard
 

@@ -4,22 +4,26 @@ import { QUERY_KEY } from "../../../queries/queryKey";
 import FoodRepositoryImpl from "../../../repositories/food/FoodRepositoryImpl";
 import Head from "next/head";
 import Search from "../../../components/Search";
+import { useRouter } from "next/router";
+import { isServer } from "../../../utils/ssr";
 
 const SearchFoodKeywordPage: NextPage = () => {
+  const router = useRouter();
+
   return (
     <>
       <Head>
-        <title>{` 먹어보시개`}</title>
+        <title>{`${router.query.keyword as string} | 먹어보시개`}</title>
       </Head>
       <Search />
     </>
   );
 };
 
-export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
+SearchFoodKeywordPage.getInitialProps = async (ctx) => {
   const queryClient = new QueryClient();
 
-  if (ctx.query.keyword) {
+  if (isServer() && ctx.query.keyword) {
     await Promise.all([
       queryClient.prefetchQuery(
         QUERY_KEY.food.getFoodsByKeyword(ctx.query.keyword as string),
@@ -32,9 +36,7 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
   }
 
   return {
-    props: {
-      dehydratedState: dehydrate(queryClient),
-    },
+    dehydratedState: dehydrate(queryClient),
   };
 };
 

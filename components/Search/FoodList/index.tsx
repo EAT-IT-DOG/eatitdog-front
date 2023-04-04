@@ -23,8 +23,6 @@ const FoodList = () => {
       </S.SafenessWrap>
       <Suspense fallback={<SearchFoodListFallbackLoader />}>
         {query.type && <FoodListByType />}
-      </Suspense>
-      <Suspense fallback={<SearchFoodListFallbackLoader />}>
         {query.keyword && <FoodListByKeyword />}
       </Suspense>
     </S.Container>

@@ -1,4 +1,4 @@
-import { GetServerSidePropsContext, NextPage } from "next";
+import { NextPage } from "next";
 import React from "react";
 import Search from "../../components/Search";
 import { QueryClient, dehydrate } from "@tanstack/react-query";
@@ -20,7 +20,7 @@ const SearchDetailPage: NextPage = () => {
   );
 };
 
-export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
+SearchDetailPage.getInitialProps = async (ctx) => {
   const queryClient = new QueryClient();
 
   if (ctx.query.name) {
@@ -34,9 +34,7 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
   }
 
   return {
-    props: {
-      dehydratedState: dehydrate(queryClient),
-    },
+    dehydratedState: dehydrate(queryClient),
   };
 };
 

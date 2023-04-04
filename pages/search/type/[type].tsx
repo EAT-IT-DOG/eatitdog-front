@@ -6,6 +6,7 @@ import Search from "../../../components/Search";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { FoodTypeKorean } from "../../../types/food/food.type";
+import { isServer } from "../../../utils/ssr";
 
 const SearchFoodTypePage: NextPage = () => {
   const router = useRouter();
@@ -22,10 +23,10 @@ const SearchFoodTypePage: NextPage = () => {
   );
 };
 
-export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
+SearchFoodTypePage.getInitialProps = async (ctx) => {
   const queryClient = new QueryClient();
 
-  if (ctx.query.type) {
+  if (isServer() && ctx.query.type) {
     await Promise.all([
       queryClient.prefetchQuery(
         QUERY_KEY.food.getFoodNamesByType(ctx.query.type as string),
