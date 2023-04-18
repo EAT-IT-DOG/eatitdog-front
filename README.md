@@ -14,7 +14,7 @@
 
 등과 같은 문제 해결을 `앱/웹 플랫폼`으로서 시도합니다.
 
-### 서버 상세 기술 스택
+### 프론트 상세 기술 스택
 
 - Framework : Next.js (TypeScript)
 - State Management : React-Query, Recoil
