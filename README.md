@@ -1,34 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 먹어보시개 프론트엔드 (Eat it dog Front-End)
 
-## Getting Started
+![image](https://user-images.githubusercontent.com/80818534/223601480-41d10b62-ae0d-475e-a86d-2abd9b7b59bb.png)
 
-First, run the development server:
+### 먹어보시개란?
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+`먹어보시개` 서비스는 반려견이 먹어도 되는 음식인지, 먹으면 위험한 음식인지 궁금할 때 간결한 해답을 주는 서비스입니다. 반려견 집사로 생활하면서 느끼던 불편함에 착안해 개발했습니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+음식 별 `섭취 가능 여부`, `급여 방법`, `증상`, `주성분 및 기능` 등의 정보를 간결하고 정확하게 제공하여
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- 강아지가 위험한 음식을 먹었을 때 신속하게 대처 가능하게 하기
+- 기존 블로그 및 인터넷 검색으로 찾는 시간 줄이기
+- 인터넷의 단순 광고성 포스팅, 틀린 정보 배제하기
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+등과 같은 문제 해결을 `앱/웹 플랫폼`으로서 시도합니다.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### 서버 상세 기술 스택
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Framework : Next.js (TypeScript)
+- State Management : React-Query, Recoil
+- Deploy : Vercel
+- Work Space : Yarn Berry
+- Style : styled-components
+- HTTP Library : Axios
