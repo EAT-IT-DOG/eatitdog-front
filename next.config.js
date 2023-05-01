@@ -14,6 +14,8 @@ const nextConfig = {
   },
   sentry: {
     hideSourceMaps: true,
+    tunnelRoute: "/monitoring-tunnel",
+    transpileClientSDK: true,
   },
 };
 
