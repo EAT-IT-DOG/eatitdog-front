@@ -8,6 +8,7 @@ import React from "react";
 import { RecoilRoot } from "recoil";
 import ThemeProviderContainer from "../ThemeProviderContainer";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { captureException } from "@sentry/nextjs";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -17,6 +18,9 @@ const queryClient = new QueryClient({
       refetchOnWindowFocus: false,
       refetchOnReconnect: false,
       staleTime: 1000,
+      onError: (error) => {
+        captureException(error);
+      },
     },
   },
 });
