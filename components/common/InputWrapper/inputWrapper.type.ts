@@ -4,6 +4,8 @@ export interface InputWrapperProps extends CommonComponentProps {
   direction: InputWrapperDirection;
 }
 
-export interface InputWrapperTitleProps extends CommonComponentProps {}
+export interface InputWrapperTitleProps extends CommonComponentProps {
+  htmlFor: string;
+}
 
 export type InputWrapperDirection = "row" | "column";

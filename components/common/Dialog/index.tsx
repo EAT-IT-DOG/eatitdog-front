@@ -11,7 +11,7 @@ const Dialog = ({ isOpen, onClose, children, customStyle }: DialogProps) => {
     <>
       {isOpen && (
         <Portal selector="#dialog">
-          <S.Background onClick={onClose} />
+          <S.Background onClick={onClose} data-testid="dialog-background" />
           <S.Container style={{ ...customStyle }}>{children}</S.Container>
         </Portal>
       )}

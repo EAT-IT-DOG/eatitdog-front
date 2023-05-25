@@ -26,13 +26,13 @@ const InputWrapper = ({
   );
 };
 
-const Title = ({ children, customStyle }: InputWrapperTitleProps) => {
+const Label = ({ children, customStyle, htmlFor }: InputWrapperTitleProps) => {
   const { direction } = useInputWrapperContext();
 
   return (
-    <S.Title style={{ ...customStyle }} direction={direction}>
+    <S.Label style={{ ...customStyle }} direction={direction} htmlFor={htmlFor}>
       {children}
-    </S.Title>
+    </S.Label>
   );
 };
 
@@ -42,5 +42,5 @@ const useInputWrapperContext = () => {
 };
 
 export default Object.assign(InputWrapper, {
-  Title: Title,
+  Label: Label,
 });
