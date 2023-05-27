@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tanstack/react-query-devtools", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:4.28.0"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:14.0.0"],\
+            ["@testing-library/user-event", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:14.4.3"],\
             ["@types/jest", "npm:29.5.1"],\
             ["@types/js-cookie", "npm:3.0.3"],\
             ["@types/node", "npm:18.15.5"],\
@@ -4170,6 +4171,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@testing-library/user-event", [\
+        ["npm:14.4.3", {\
+          "packageLocation": "./.yarn/cache/@testing-library-user-event-npm-14.4.3-2d1a75355f-852c48ea6d.zip/node_modules/@testing-library/user-event/",\
+          "packageDependencies": [\
+            ["@testing-library/user-event", "npm:14.4.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:14.4.3", {\
+          "packageLocation": "./.yarn/__virtual__/@testing-library-user-event-virtual-0fc5af881f/0/cache/@testing-library-user-event-npm-14.4.3-2d1a75355f-852c48ea6d.zip/node_modules/@testing-library/user-event/",\
+          "packageDependencies": [\
+            ["@testing-library/user-event", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:14.4.3"],\
+            ["@testing-library/dom", null],\
+            ["@types/testing-library__dom", null]\
+          ],\
+          "packagePeers": [\
+            "@testing-library/dom",\
+            "@types/testing-library__dom"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@tootallnate/once", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/@tootallnate-once-npm-2.0.0-e36cf4f140-ad87447820.zip/node_modules/@tootallnate/once/",\
@@ -5910,6 +5933,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tanstack/react-query-devtools", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:4.28.0"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:14.0.0"],\
+            ["@testing-library/user-event", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:14.4.3"],\
             ["@types/jest", "npm:29.5.1"],\
             ["@types/js-cookie", "npm:3.0.3"],\
             ["@types/node", "npm:18.15.5"],\

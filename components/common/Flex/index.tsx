@@ -19,6 +19,7 @@ export const Flex = ({
       align={align}
       gap={gap}
       direction={direction}
+      data-testid="flex-test-id"
     >
       {children}
     </FlexContainer>

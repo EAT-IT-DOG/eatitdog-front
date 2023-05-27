@@ -1,8 +1,8 @@
-import { Container } from "./style";
+import { Input } from "./style";
 import { TextInputProps } from "./textInput.type";
 
 const TextInput = ({ children, customStyle, ...attr }: TextInputProps) => {
-  return <Container {...attr}></Container>;
+  return <Input {...attr} data-testid="textinput-test-id" />;
 };
 
 export default TextInput;
