@@ -2,7 +2,7 @@ import React from "react";
 import { FlexContainer } from "./style";
 import { FlexProps } from "./flex.type";
 
-export const Flex = ({
+const Flex = ({
   children,
   gap,
   justify,
@@ -25,3 +25,5 @@ export const Flex = ({
     </FlexContainer>
   );
 };
+
+export default Flex;

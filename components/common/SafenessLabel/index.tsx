@@ -1,7 +1,7 @@
 import React from "react";
 import { FoodSafenessKorean } from "../../../types/food/food.type";
 import { SafenssLabelName } from "../../Search/FoodList/style";
-import { Flex } from "../Flex";
+import Flex from "../Flex";
 import { SafenessLabelProps } from "./safenessLabel.type";
 import * as S from "./style";
 

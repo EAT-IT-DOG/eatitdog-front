@@ -16,8 +16,13 @@ const SearchBar = () => {
         placeholder="음식 이름을 입력하세요"
         value={keyword}
         onChange={onChangeKeyword}
+        data-testid="searchBar-input-test-id"
       />
-      <SearchBarSubmitButton type="submit" aria-label="search">
+      <SearchBarSubmitButton
+        type="submit"
+        aria-label="search"
+        data-testid="searchBar-button-test-id"
+      >
         <SearchBarSubmitButtonIcon>
           <BiSearch />
         </SearchBarSubmitButtonIcon>

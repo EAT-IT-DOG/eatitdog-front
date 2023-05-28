@@ -12,7 +12,7 @@ const DarkmodeButton = () => {
 
   return (
     <DarkmodeButtonContainer onClick={handleTheme} aria-label="darkmode">
-      <DarkmodeButtonIcon>
+      <DarkmodeButtonIcon data-testid="darkmodeButton-icon-test-id">
         {currentTheme === "LIGHT" ? <HiOutlineSun /> : <BiMoon />}
       </DarkmodeButtonIcon>
     </DarkmodeButtonContainer>
