@@ -1,8 +1,8 @@
 import { render, screen, cleanup } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Button from ".";
-import { ButtonType } from "./button.type";
 import React from "react";
+import { ButtonType } from "./types";
 
 afterEach(cleanup);
 

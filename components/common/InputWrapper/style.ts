@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { InputWrapperDirection } from "./inputWrapper.type";
+import { InputWrapperDirection } from "./types";
 
 export const Container = styled.div<{
   direction: InputWrapperDirection;

@@ -1,5 +1,5 @@
 import React from "react";
-import { InputWrapperProps, InputWrapperTitleProps } from "./inputWrapper.type";
+import { InputWrapperProps, InputWrapperTitleProps } from "./types";
 import * as S from "./style";
 
 const InputWrapperContext = React.createContext<

@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
-import { ButtonType } from "./button.type";
 import { palette } from "../../../styles/palette";
+import { ButtonType } from "./types";
 
 export const Container = styled.button<{ buttonType: ButtonType }>`
   width: 80px;

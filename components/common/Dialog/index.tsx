@@ -1,9 +1,5 @@
 import { Portal } from "../Portal";
-import {
-  DialogButtonsProps,
-  DialogProps,
-  DialogTextProps,
-} from "./dialog.type";
+import { DialogButtonsProps, DialogProps, DialogTextProps } from "./types";
 import * as S from "./style";
 
 const Dialog = ({ isOpen, onClose, children, customStyle }: DialogProps) => {

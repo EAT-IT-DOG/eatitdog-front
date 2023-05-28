@@ -1,6 +1,6 @@
-import { AvatarProps } from "./avatar.type";
 import * as S from "./style";
 import DefaultProfileImg from "../../../assets/images/defaultProfile.svg";
+import { AvatarProps } from "./types";
 
 const Avatar = ({ customStyle, imageUrl, alt }: AvatarProps) => {
   return (

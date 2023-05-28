@@ -6,7 +6,7 @@ import {
   FlexDirectionType,
   FlexJustify,
   FlexJustifyType,
-} from "./flex.type";
+} from "./types";
 
 export const FlexContainer = styled.div<{
   gap: number | undefined;

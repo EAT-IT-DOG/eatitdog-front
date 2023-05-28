@@ -1,7 +1,7 @@
 import { render, screen, cleanup } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Flex from ".";
 import React from "react";
+import Flex from ".";
 
 afterEach(cleanup);
 

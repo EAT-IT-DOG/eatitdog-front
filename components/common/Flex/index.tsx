@@ -1,6 +1,6 @@
 import React from "react";
 import { FlexContainer } from "./style";
-import { FlexProps } from "./flex.type";
+import { FlexProps } from "./types";
 
 const Flex = ({
   children,
