@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { FoodSafenessColor } from "../../../constants/search/search.constant";
-import { FoodSafeness } from "../../../types/food/food.type";
-import { palette } from "../../../styles/palette";
+import { FoodSafenessColor } from "constants/search/search.constant";
+import { FoodSafeness } from "types/food/food.type";
+import { palette } from "styles/palette";
 
 export const Container = styled.section`
   width: 100%;

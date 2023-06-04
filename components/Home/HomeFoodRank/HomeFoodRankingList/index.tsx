@@ -1,4 +1,4 @@
-import { useGetFoodNamesBySearch } from "../../../../queries/food/food.query";
+import { useGetFoodNamesBySearch } from "queries/food/food.query";
 import HomeFoodRankItem from "../HomeFoodRankItem";
 
 const HomeFoodRankingList = () => {

@@ -1,4 +1,4 @@
-import { FoodSafeness } from "../../types/food/food.type";
+import { FoodSafeness } from "types/food/food.type";
 
 export const safenessGuideTransform = (type: FoodSafeness) => {
   switch (type) {

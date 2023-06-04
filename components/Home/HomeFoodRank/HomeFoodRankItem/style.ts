@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { widthOverflowEllipsisLine } from "../../../../styles/libStyle";
+import { widthOverflowEllipsisLine } from "styles/libStyle";
 
 export const HomeFoodRankItemContainer = styled.li`
   width: 140px;

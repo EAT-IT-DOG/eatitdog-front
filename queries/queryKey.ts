@@ -1,4 +1,4 @@
-import { FoodType } from "../types/food/food.type";
+import { FoodType } from "types/food/food.type";
 
 export const QUERY_KEY = {
   food: {

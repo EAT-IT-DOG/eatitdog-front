@@ -1,9 +1,9 @@
 import { NextPage } from "next";
 import React from "react";
-import Search from "../../components/Search";
+import Search from "components/Search";
 import { QueryClient, dehydrate } from "@tanstack/react-query";
-import { QUERY_KEY } from "../../queries/queryKey";
-import FoodRepositoryImpl from "../../repositories/food/FoodRepositoryImpl";
+import { QUERY_KEY } from "queries/queryKey";
+import FoodRepositoryImpl from "repositories/food/FoodRepositoryImpl";
 import Head from "next/head";
 import { useRouter } from "next/router";
 

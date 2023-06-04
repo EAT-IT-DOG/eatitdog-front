@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { ThemeProvider } from "styled-components";
-import useTheme from "../../../hooks/theme/useTheme";
+import useTheme from "hooks/theme/useTheme";
 
 import React from "react";
 

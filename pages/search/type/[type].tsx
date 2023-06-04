@@ -1,12 +1,12 @@
 import { QueryClient, dehydrate } from "@tanstack/react-query";
-import { GetServerSidePropsContext, NextPage } from "next";
-import { QUERY_KEY } from "../../../queries/queryKey";
-import FoodRepositoryImpl from "../../../repositories/food/FoodRepositoryImpl";
-import Search from "../../../components/Search";
+import { NextPage } from "next";
+import { QUERY_KEY } from "queries/queryKey";
+import FoodRepositoryImpl from "repositories/food/FoodRepositoryImpl";
+import Search from "components/Search";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { FoodTypeKorean } from "../../../types/food/food.type";
-import { isServer } from "../../../utils/ssr";
+import { FoodTypeKorean } from "types/food/food.type";
+import { isServer } from "utils/ssr";
 
 const SearchFoodTypePage: NextPage = () => {
   const router = useRouter();

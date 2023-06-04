@@ -1,4 +1,4 @@
-import { FoodSafeness, FoodType } from "../../types/food/food.type";
+import { FoodSafeness, FoodType } from "types/food/food.type";
 
 export const FoodSafenessColor: Record<FoodSafeness, string> = {
   SAFE: "#435c53",

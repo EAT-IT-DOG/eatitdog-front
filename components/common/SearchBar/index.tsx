@@ -5,7 +5,7 @@ import {
   SearchBarSubmitButtonIcon,
 } from "./style";
 import { BiSearch } from "@react-icons/all-files/bi/BiSearch";
-import useSearchFood from "../../../hooks/food/useSearchFood";
+import useSearchFood from "hooks/food/useSearchFood";
 
 const SearchBar = () => {
   const { keyword, onChangeKeyword, onSearchKeyword } = useSearchFood();

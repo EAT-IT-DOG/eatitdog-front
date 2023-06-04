@@ -1,5 +1,5 @@
 import axios from "axios";
-import { REQUEST_TOKEN_KEY } from "../../constants/token/token.constant";
+import { REQUEST_TOKEN_KEY } from "constants/token/token.constant";
 import token from "../token/Token";
 import config from "../../config/config.json";
 

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-import Person from "../assets/images/mobile/person.svg";
+import Person from "assets/images/mobile/person.svg";
 import Button from "../components/common/Button";
 
 interface Props {
