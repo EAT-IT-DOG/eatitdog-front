@@ -1,5 +1,5 @@
 import { Portal } from "../Portal";
-import { ModalButtonsProps, ModalProps, ModalTitleProps } from "./modal.type";
+import { ModalButtonsProps, ModalProps, ModalTitleProps } from "./types";
 import * as S from "./style";
 
 const Modal = ({ isOpen, onClose, customStyle, children }: ModalProps) => {

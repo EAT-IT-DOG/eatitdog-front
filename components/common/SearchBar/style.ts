@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { palette } from "../../../styles/palette";
+import { palette } from "styles/palette";
 
 export const SearchBarContainer = styled.form`
   width: 470px;

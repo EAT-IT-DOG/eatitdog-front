@@ -1,8 +1,8 @@
 import {
   useGetFoodNamesByType,
   useGetFoodsByKeyword,
-} from "../../../queries/food/food.query";
-import { FoodTypeKorean } from "../../../types/food/food.type";
+} from "queries/food/food.query";
+import { FoodTypeKorean } from "types/food/food.type";
 import FoodNotFound from "../FoodNotFound";
 import * as S from "./style";
 import { useRouter } from "next/router";

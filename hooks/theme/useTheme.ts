@@ -1,10 +1,10 @@
 import { useCallback, useMemo } from "react";
 import { useRecoilState } from "recoil";
 import { DefaultTheme } from "styled-components";
-import { THEME_KEY, ThemeType } from "../../constants/theme/theme.constant";
-import Cookie from "../../libs/storage/Cookie";
-import { darkTheme, lightTheme } from "../../styles/theme";
-import { themeModeAtom } from "../../store/themeStore";
+import { THEME_KEY, ThemeType } from "constants/theme/theme.constant";
+import Cookie from "libs/storage/Cookie";
+import { darkTheme, lightTheme } from "styles/theme";
+import { themeModeAtom } from "stores/themeStore";
 
 const useTheme = () => {
   const [currentTheme, setCurrentTheme] =

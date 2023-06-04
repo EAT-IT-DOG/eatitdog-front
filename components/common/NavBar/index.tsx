@@ -8,7 +8,7 @@ import {
   NavBarSectionWrap,
   NavBarTitle,
 } from "./style";
-import { NAVBAR_SECTION_ITEMS } from "../../../constants/navBar/navBar.constant";
+import { NAVBAR_SECTION_ITEMS } from "constants/navBar/navBar.constant";
 import { FiLogOut } from "@react-icons/all-files/fi/FiLogOut";
 import React from "react";
 import { useRouter } from "next/router";

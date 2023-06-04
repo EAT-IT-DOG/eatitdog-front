@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { palette } from "../../../styles/palette";
+import { palette } from "styles/palette";
 
 export const DarkmodeButtonContainer = styled.button`
   width: 40px;

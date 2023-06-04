@@ -1,12 +1,12 @@
-import DrinkIcon from "../../assets/icons/food/drinkIcon.svg";
-import FruitIcon from "../../assets/icons/food/fruitIcon.svg";
-import JunkFoodIcon from "../../assets/icons/food/junkFoodIcon.svg";
-import MeatIcon from "../../assets/icons/food/meatIcon.svg";
-import MilkProductIcon from "../../assets/icons/food/milkProductIcon.svg";
-import SeaFoodIcon from "../../assets/icons/food/seaFoodIcon.svg";
-import SeasoningIcon from "../../assets/icons/food/seasoningIcon.svg";
-import SnackIcon from "../../assets/icons/food/snackIcon.svg";
-import VegetableIcon from "../../assets/icons/food/vegetableIcon.svg";
+import DrinkIcon from "assets/icons/food/drinkIcon.svg";
+import FruitIcon from "assets/icons/food/fruitIcon.svg";
+import JunkFoodIcon from "assets/icons/food/junkFoodIcon.svg";
+import MeatIcon from "assets/icons/food/meatIcon.svg";
+import MilkProductIcon from "assets/icons/food/milkProductIcon.svg";
+import SeaFoodIcon from "assets/icons/food/seaFoodIcon.svg";
+import SeasoningIcon from "assets/icons/food/seasoningIcon.svg";
+import SnackIcon from "assets/icons/food/snackIcon.svg";
+import VegetableIcon from "assets/icons/food/vegetableIcon.svg";
 
 export const HOME_FOOD_TYPES_ITEM = [
   {

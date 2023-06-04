@@ -1,12 +1,12 @@
 import type { AppProps } from "next/app";
-import "../styles/reset.css";
-import "../styles/globalStyle.css";
-import Providers from "../components/common/Providers";
-import Layout from "../components/common/Layout";
+import "styles/reset.css";
+import "styles/globalStyle.css";
+import Providers from "components/common/Providers";
+import Layout from "components/common/Layout";
 import Head from "next/head";
-import DeviceDetectWrapper from "../components/common/DeviceDetectWrapper";
+import DeviceDetectWrapper from "components/common/DeviceDetectWrapper";
 import MobilePage from "./MobilePage";
-import Scripts from "../components/common/Scripts";
+import Scripts from "components/common/Scripts";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

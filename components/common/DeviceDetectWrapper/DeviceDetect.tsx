@@ -1,4 +1,4 @@
-import { DeviceDetectWrapProps } from "./deviceDetectWrapper.type";
+import { DeviceDetectWrapProps } from "./types";
 import * as rdd from "react-device-detect";
 
 const DeviceDetect = ({ children }: DeviceDetectWrapProps) => {

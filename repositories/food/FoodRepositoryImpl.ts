@@ -1,5 +1,5 @@
-import { customAxios } from "../../libs/axios";
-import { Food, FoodName } from "../../types/food/food.type";
+import { customAxios } from "libs/axios";
+import { Food, FoodName } from "types/food/food.type";
 import {
   FoodRepository,
   getFoodNamesByTypeParam,

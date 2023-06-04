@@ -1,5 +1,5 @@
 import * as S from "./style";
-import Dog from "../../../assets/images/dog.svg";
+import Dog from "assets/images/dog.svg";
 
 const FoodNotFound = () => {
   return (

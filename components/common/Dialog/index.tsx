@@ -1,9 +1,5 @@
 import { Portal } from "../Portal";
-import {
-  DialogButtonsProps,
-  DialogProps,
-  DialogTextProps,
-} from "./dialog.type";
+import { DialogButtonsProps, DialogProps, DialogTextProps } from "./types";
 import * as S from "./style";
 
 const Dialog = ({ isOpen, onClose, children, customStyle }: DialogProps) => {
@@ -11,7 +7,7 @@ const Dialog = ({ isOpen, onClose, children, customStyle }: DialogProps) => {
     <>
       {isOpen && (
         <Portal selector="#dialog">
-          <S.Background onClick={onClose} />
+          <S.Background onClick={onClose} data-testid="dialog-background" />
           <S.Container style={{ ...customStyle }}>{children}</S.Container>
         </Portal>
       )}

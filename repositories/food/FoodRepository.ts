@@ -1,4 +1,4 @@
-import { Food, FoodName, FoodType } from "../../types/food/food.type";
+import { Food, FoodName, FoodType } from "types/food/food.type";
 
 export interface FoodRepository {
   getFoodNamesByType({ type }: getFoodNamesByTypeParam): Promise<FoodName[]>;

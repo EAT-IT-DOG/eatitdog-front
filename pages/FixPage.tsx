@@ -1,5 +1,5 @@
 import React from "react";
-import FixIcon from "../assets/icons/fixIcon.svg";
+import FixIcon from "assets/icons/fixIcon.svg";
 import styled from "styled-components";
 import Image from "next/image";
 

@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { useGetRandomFood } from "../../../queries/food/food.query";
+import { useGetRandomFood } from "queries/food/food.query";
 import {
   HomeFoodRecommendContainer,
   HomeFoodRecommendFoodDescription,
@@ -7,7 +7,7 @@ import {
   HomeFoodRecommendFoodName,
   HomeFoodRecommendTitle,
 } from "./style";
-import CheeseIcon from "../../../assets/icons/cheeseIcon.svg";
+import CheeseIcon from "assets/icons/cheeseIcon.svg";
 
 const HomeFoodRecommend = () => {
   // const { data } = useGetRandomFood();

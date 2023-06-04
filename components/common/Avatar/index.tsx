@@ -1,14 +1,15 @@
-import { AvatarProps } from "./Avatar.type";
 import * as S from "./style";
+import DefaultProfileImg from "assets/images/defaultProfile.svg";
+import { AvatarProps } from "./types";
 
-const Avatar = ({ customStyle, imageUrl }: AvatarProps) => {
+const Avatar = ({ customStyle, imageUrl, alt }: AvatarProps) => {
   return (
     <S.Container
       width={120}
       height={120}
       style={{ ...customStyle }}
-      src={imageUrl}
-      alt="avatar"
+      src={imageUrl || DefaultProfileImg}
+      alt={alt}
     />
   );
 };

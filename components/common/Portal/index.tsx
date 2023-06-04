@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import { PortalProps } from "./portal.type";
+import { PortalProps } from "./types";
 
 export const Portal = ({ children, selector }: PortalProps) => {
   if (!children) {

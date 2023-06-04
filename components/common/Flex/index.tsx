@@ -1,8 +1,8 @@
 import React from "react";
 import { FlexContainer } from "./style";
-import { FlexProps } from "./flex.type";
+import { FlexProps } from "./types";
 
-export const Flex = ({
+const Flex = ({
   children,
   gap,
   justify,
@@ -19,8 +19,11 @@ export const Flex = ({
       align={align}
       gap={gap}
       direction={direction}
+      data-testid="flex-test-id"
     >
       {children}
     </FlexContainer>
   );
 };
+
+export default Flex;

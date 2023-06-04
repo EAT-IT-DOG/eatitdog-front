@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import NotFoundIcon from "../assets/icons/notFoundIcon.svg";
+import NotFoundIcon from "assets/icons/notFoundIcon.svg";
 import Image from "next/image";
 
 const Custom404 = () => {

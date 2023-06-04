@@ -1,7 +1,7 @@
 import { UseQueryOptions, useQuery } from "@tanstack/react-query";
-import { Food, FoodName } from "../../types/food/food.type";
+import { Food, FoodName } from "types/food/food.type";
 import { AxiosError } from "axios";
-import FoodRepositoryImpl from "../../repositories/food/FoodRepositoryImpl";
+import FoodRepositoryImpl from "repositories/food/FoodRepositoryImpl";
 import { QUERY_KEY } from "../queryKey";
 import {
   getFoodByNameParam,

@@ -1,4 +1,4 @@
-import HomePanelDogImage from "../../../assets/images/home/homePanelDog.svg";
+import HomePanelDogImage from "assets/images/home/homePanelDog.svg";
 import {
   HomePanelContainer,
   HomePanelImage,

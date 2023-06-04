@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { SEARCH_FOOD_TYPES_ITEM } from "../../../constants/search/search.constant";
+import { SEARCH_FOOD_TYPES_ITEM } from "constants/search/search.constant";
 import * as S from "./style";
 
 const FoodTypeList = () => {

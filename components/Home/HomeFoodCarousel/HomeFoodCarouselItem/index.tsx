@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { FoodTypeKorean } from "../../../../types/food/food.type";
+import { FoodTypeKorean } from "types/food/food.type";
 import {
   HomeFoodCarouselItemContainer,
   HomeFoodCarouselItemDescription,

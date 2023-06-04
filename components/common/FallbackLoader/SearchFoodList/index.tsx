@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { skeletonAnimtaion } from "../../../../styles/libStyle";
+import { skeletonAnimtaion } from "styles/libStyle";
 
 const SearchFoodListFallbackLoader = () => {
   return (

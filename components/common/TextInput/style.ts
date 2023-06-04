@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.input`
+export const Input = styled.input`
   width: 100%;
   height: 40px;
   border: 1px solid ${({ theme }) => theme.borderColor};
