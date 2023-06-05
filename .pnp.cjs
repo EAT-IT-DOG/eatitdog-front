@@ -60,6 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-slick", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:0.29.0"],\
             ["recoil", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:0.7.7"],\
             ["styled-components", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:5.3.9"],\
+            ["ts-pattern", "npm:4.3.0"],\
             ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"],\
             ["uuid", "npm:9.0.0"]\
           ],\
@@ -5959,6 +5960,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-slick", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:0.29.0"],\
             ["recoil", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:0.7.7"],\
             ["styled-components", "virtual:4770d806338f7d182aacadf52b8b9bad796ac4ae3079d269e80ad162dfc57b15d0ab3c985151411754d23aa9ba4c64344c4f9001116eae065d5acbf23654ea69#npm:5.3.9"],\
+            ["ts-pattern", "npm:4.3.0"],\
             ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"],\
             ["uuid", "npm:9.0.0"]\
           ],\
@@ -10775,6 +10777,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["tr46", "npm:3.0.0"],\
             ["punycode", "npm:2.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["ts-pattern", [\
+        ["npm:4.3.0", {\
+          "packageLocation": "./.yarn/cache/ts-pattern-npm-4.3.0-0f6c90aeac-f5167f6f72.zip/node_modules/ts-pattern/",\
+          "packageDependencies": [\
+            ["ts-pattern", "npm:4.3.0"]\
           ],\
           "linkType": "HARD"\
         }]\

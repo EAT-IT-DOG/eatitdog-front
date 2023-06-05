@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { FoodSafenessColor } from "constants/search/search.constant";
 import { FoodSafeness } from "types/food/food.type";
+import { getFoodSafenessColor } from "utils/dataTransform";
 
 export const Container = styled.section`
   width: 100%;
@@ -20,12 +20,13 @@ export const FoodTypeItem = styled.li<{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${({ safenessType }) => FoodSafenessColor[safenessType]};
+  background-color: ${({ safenessType }) => getFoodSafenessColor(safenessType)};
   cursor: pointer;
 
   &:hover {
     background-color: ${({ theme }) => theme.subBackgroundColor};
-    border: 1px solid ${({ safenessType }) => FoodSafenessColor[safenessType]};
-    color: ${({ safenessType }) => FoodSafenessColor[safenessType]};
+    border: 1px solid
+      ${({ safenessType }) => getFoodSafenessColor(safenessType)};
+    color: ${({ safenessType }) => getFoodSafenessColor(safenessType)};
   }
 `;

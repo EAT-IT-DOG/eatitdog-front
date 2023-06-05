@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { FoodSafenessColor } from "constants/search/search.constant";
 import { FoodSafeness } from "types/food/food.type";
 import { palette } from "styles/palette";
+import { getFoodSafenessColor } from "utils/dataTransform";
 
 export const Container = styled.section`
   width: 100%;
@@ -58,7 +58,7 @@ export const FoodItem = styled.div<{
   width: 161px;
   height: 82px;
   border-radius: 15px;
-  border: 1px solid ${({ safenessType }) => FoodSafenessColor[safenessType]};
+  border: 1px solid ${({ safenessType }) => getFoodSafenessColor(safenessType)};
   cursor: pointer;
   background: none;
   display: flex;
@@ -69,7 +69,8 @@ export const FoodItem = styled.div<{
   row-gap: 2px;
 
   &:hover {
-    background-color: ${({ safenessType }) => FoodSafenessColor[safenessType]};
+    background-color: ${({ safenessType }) =>
+      getFoodSafenessColor(safenessType)};
   }
 `;
 

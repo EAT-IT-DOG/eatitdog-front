@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { FoodTypeKorean } from "types/food/food.type";
+import { FoodType } from "types/food/food.type";
 import {
   HomeFoodCarouselItemContainer,
   HomeFoodCarouselItemDescription,
@@ -8,6 +8,7 @@ import {
   HomeFoodCarouselItemTextWrap,
   HomeFoodCarouselItemTitle,
 } from "./style";
+import { getFoodTypeKorean } from "utils/dataTransform";
 
 interface Props {
   backgroundColor: string;
@@ -39,7 +40,7 @@ const HomeFoodCarouselItem = ({
       </HomeFoodCarouselItemIconWrap>
       <HomeFoodCarouselItemTextWrap>
         <HomeFoodCarouselItemTitle>
-          {FoodTypeKorean[type]}
+          {getFoodTypeKorean(type as FoodType)}
         </HomeFoodCarouselItemTitle>
         <HomeFoodCarouselItemDescription>
           {description} 등

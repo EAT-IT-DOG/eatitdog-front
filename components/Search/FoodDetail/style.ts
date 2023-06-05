@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FoodSafeness } from "../../../types/food/food.type";
-import { FoodSafenessColor } from "../../../constants/search/search.constant";
+import { getFoodSafenessColor } from "utils/dataTransform";
 
 export const Container = styled.article<{ safenessType: FoodSafeness }>`
   width: 100%;
@@ -11,7 +11,7 @@ export const Container = styled.article<{ safenessType: FoodSafeness }>`
   padding: 40px;
   display: flex;
   flex-direction: column;
-  border: 1px solid ${({ safenessType }) => FoodSafenessColor[safenessType]};
+  border: 1px solid ${({ safenessType }) => getFoodSafenessColor(safenessType)};
 `;
 
 export const Wrap = styled.div`

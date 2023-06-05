@@ -9,18 +9,6 @@ export type FoodType =
   | "SNACK"
   | "VEGETABLE";
 
-export const FoodTypeKorean: Record<string, string> = {
-  DRINK: "음료",
-  FRUIT: "과일",
-  JUNK_FOOD: "인스턴트",
-  MEAT: "육류",
-  MILK_PRODUCT: "유제품",
-  SEAFOOD: "해산물",
-  SEASONING: "조미료",
-  SNACK: "간식",
-  VEGETABLE: "채소",
-} as const;
-
 export const FoodSafenessKorean: Record<string, string> = {
   SAFE: "안전",
   NORMAL: "양호",

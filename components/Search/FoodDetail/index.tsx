@@ -1,10 +1,9 @@
 import { useRouter } from "next/router";
 import { useGetFoodByName } from "queries/food/food.query";
-import { safenessGuideTransform } from "utils/dataTransform";
+import { getSafenessExplain } from "utils/dataTransform";
 import SafenessLabel from "../../common/SafenessLabel";
 import * as S from "./style";
 import Button from "../../common/Button";
-import { FoodSafenessColor } from "constants/search/search.constant";
 import Flex from "../../common/Flex";
 
 const FoodDetail = () => {
@@ -27,9 +26,7 @@ const FoodDetail = () => {
         <div>
           <S.SubTitle>섭취가능여부</S.SubTitle>
           {serverFoodData && (
-            <S.Content>
-              {safenessGuideTransform(serverFoodData.safeness)}
-            </S.Content>
+            <S.Content>{getSafenessExplain(serverFoodData.safeness)}</S.Content>
           )}
         </div>
 
