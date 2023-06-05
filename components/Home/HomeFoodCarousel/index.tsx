@@ -1,10 +1,10 @@
 import { useMemo } from "react";
 import Slider from "react-slick";
 import { HOME_FOOD_TYPES_ITEM } from "constants/home/home.constant";
-import { FoodSafenessColor } from "constants/search/search.constant";
 import { FoodSafeness } from "types/food/food.type";
 import HomeFoodCarouselItem from "./HomeFoodCarouselItem";
 import { HomeFoodCarouselContainer, HoomFoodCarouelWrap } from "./style";
+import { getFoodSafenessColor } from "utils/dataTransform";
 
 const HomeFoodCarousel = () => {
   const homeFoodCarouselSetting = useMemo(
@@ -37,7 +37,9 @@ const HomeFoodCarousel = () => {
         <Slider {...homeFoodCarouselSetting}>
           {HOME_FOOD_TYPES_ITEM.map((item) => (
             <HomeFoodCarouselItem
-              backgroundColor={FoodSafenessColor[item.safeness as FoodSafeness]}
+              backgroundColor={getFoodSafenessColor(
+                item.safeness as FoodSafeness
+              )}
               type={item.type}
               description={item.description}
               icon={item.icon}

@@ -5,8 +5,9 @@ import FoodRepositoryImpl from "repositories/food/FoodRepositoryImpl";
 import Search from "components/Search";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { FoodTypeKorean } from "types/food/food.type";
+import { FoodType } from "types/food/food.type";
 import { isServer } from "utils/ssr";
+import { getFoodTypeKorean } from "utils/dataTransform";
 
 const SearchFoodTypePage: NextPage = () => {
   const router = useRouter();
@@ -14,9 +15,9 @@ const SearchFoodTypePage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{`${
-          FoodTypeKorean[router.query.type as string]
-        } | 먹어보시개`}</title>
+        <title>{`${getFoodTypeKorean(
+          router.query.type as FoodType
+        )} | 먹어보시개`}</title>
       </Head>
       <Search />
     </>

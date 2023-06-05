@@ -2,7 +2,6 @@ import {
   useGetFoodNamesByType,
   useGetFoodsByKeyword,
 } from "queries/food/food.query";
-import { FoodTypeKorean } from "types/food/food.type";
 import FoodNotFound from "../FoodNotFound";
 import * as S from "./style";
 import { useRouter } from "next/router";
@@ -10,6 +9,8 @@ import SafenessLabel from "../../common/SafenessLabel";
 import { Suspense } from "react";
 import SearchFoodListFallbackLoader from "../../common/FallbackLoader/SearchFoodList";
 import Link from "next/link";
+import { getFoodTypeKorean } from "utils/dataTransform";
+import { FoodType } from "types/food/food.type";
 
 const FoodList = () => {
   const { query } = useRouter();
@@ -52,7 +53,7 @@ const FoodListByType = () => {
               <S.FoodItem safenessType={foodName.safeness}>
                 <S.FoodItemTitle>{foodName.name}</S.FoodItemTitle>
                 <S.FoodItemType>
-                  #{FoodTypeKorean[router.query.type as string]}
+                  #{getFoodTypeKorean(router.query.type as FoodType)}
                 </S.FoodItemType>
               </S.FoodItem>
             </Link>
@@ -81,7 +82,7 @@ const FoodListByKeyword = () => {
             <Link href={`/search/${food.name}`} key={food.name}>
               <S.FoodItem safenessType={food.safeness}>
                 <S.FoodItemTitle>{food.name}</S.FoodItemTitle>
-                <S.FoodItemType>#{FoodTypeKorean[food.type]}</S.FoodItemType>
+                <S.FoodItemType>#{getFoodTypeKorean(food.type)}</S.FoodItemType>
               </S.FoodItem>
             </Link>
           ))}
